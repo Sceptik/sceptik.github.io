@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <img
+          class="Avatar"
+          src="https://cs9.pikabu.ru/post_img/2019/10/16/12/og_og_1571258552256990481.jpg"
+          alt="Аватар Малиновского Ильи"
+        />
+        <div class="nameBox">
+          <div class="greetingPhrase">Привет! Я</div>
+          <div class="yourInfo">
+            <div class="name" onclick="changetext(this)">Малиновский Илья</div>
+            <div class="role" onclick="changetext(this)">Студент СибГУТИ</div>
+          </div>
+        </div>
+        <div class="languagesBox">
+          <div class="title">Языки:</div>
+          <div class="english" onclick="changeLanguage(this)">
+            Английский
+            <img
+              class="engflag" id= "flag"
+              src="https://www.a1flags.com.au/images/Catalogue/Flag/uk---.svg"
+              alt="Флаг Англии"
+            />
+          </div>
+          <div class="russian" onclick="changeLanguage(this)">
+            Русский
+            <img
+              class="rusflag" id="flag"
+              src="https://sc24-surgut.gosuslugi.ru/netcat_files/userfiles/Ofitsal_no/Flag_Rossii_1_.jpg"
+              alt="Флаг России"
+            />
+          </div>
+          <div class="german" onclick="changeLanguage(this)">
+            Немецкий
+            <img
+              class="gerflag" id="flag"
+              src="https://www.labelocean.de/ae/Germany/Flaggen/ES-FL-DEU.jpg"
+              alt="Флаг Германии"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="expBox">
+          <div class="title">Опыт</div>
+          <div class="exp" onclick="changetext(this)">
+            Получил боевое крещение в программировании на 1 курсе на предмете
+            "Программирование", на втором семестре был направлен на улучшение
+            знаний в области ООП и был обучен основам на предмете "Технологии
+            программирования", также поддерживал боевую форму благодаря предмету
+            "САОД", пережил год физики, почти пережил Высшую Математику и не без
+            труда, но прошел боевую миссию "Дискретная математика".
+          </div>
+        </div>
+        <div class="toolsBox">
+          <div class="title">Навыки</div>
+          <div class="tools">
+            <ul>
+              <li onclick="changeLi(this)"><span>Photoshop</span></li>
+              <li onclick="changeLi(this)"><span>C++</span></li>
+              <li onclick="changeLi(this)"><span>C</span></li>
+              <li onclick="changeLi(this)"><span>GitHub</span></li>
+              <li onclick="changeLi(this)"><span>Figma</span></li>
+              <li onclick="changeLi(this)"><span>HTML+CSS+JS</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <div class="educationBox">
+          <div class="title">Образование</div>
+          <div class="schoolBox">
+            <div class="school" onclick="changetext(this)">Школа №18 ст. Мочище. Среднее общее</div>
+          </div>
+          <div class="schoolBox">
+            <div class="school" onclick="changetext(this)">СибГУТИ ИВТ Программное обеспечение мобильных сетей 2 курс</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="interestsBox">
+            <div class="title">Интересы</div>
+            <ul>
+              <li onclick="changeLi(this)"><span>Программирование</span></li>
+              <li onclick="changeLi(this)"><span>Воллейбол</span></li>
+              <li onclick="changeLi(this)"><span>Трен зал</span></li>
+              <li onclick="changeLi(this)"><span>Игра на музыкальных инструментах</span></li>
+            </ul>
+          </div>
+          <div class="contactBox">
+            <div class="title">Контакты</div>
+            <div class="contactText">Номер телефона:</div>
+            <div class="phoneNumber" onclick="changetext(this)">+7(995)129-51-34</div>
+            <div class="contactText">Почта:</div>
+            <div class="email" onclick="changetext(this)">iluha154russick@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <button id="saveBtn" class="saveButton">Сохранить изменения</button>
+      <div class="PDFbutton">
+        <button type="button" onclick="convertPDF()" class="button">
+          <div class="PDFtext">Скачать в PDF</div>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src = 'index.js'></script>
+</html>
